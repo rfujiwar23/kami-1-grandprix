@@ -22,9 +22,27 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </head>
+<script>
+    $(document).scroll(function () {
+      var y = $(this).scrollTop();
+      if (y > 900) {
+        $('.bottomMenu').fadeIn();
+      } else {
+        $('.bottomMenu').fadeOut();
+      }
+    });
+  </script>
 
 <body>
     <div class="wrapper">
+        <div class="bottom-menu" id="link-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 text-center banner-left">外部リンク①</div>
+                    <div class="col-6 text-center banner-right">外部リンク②</div>
+                </div>
+            </div>
+        </div>
         <nav class="navbar navbar-light">
             <a class="navbar-brand" href="#">
               <img src="assets/images/logo.png" height="50" class="d-inline-block align-top mx-3" alt="">
@@ -154,7 +172,7 @@
                         個性や強みを魅力的に演出する自己プロデュース力を<br>
                         発揮して頂くために、<span>「動画」をテーマ</span>にした<br>
                         ステージをご用意いたしました。<br>
-                        1回戦、2回戦を突破し、見事決勝戦で優勝した参加者には<br>
+                        1回戦、2回戦を突破し、見事決勝戦で優勝した参加者には
                         グランプリ獲得を記念して賞を贈呈致します。
                     </p>
                     <div class="col-lg-6 offset-lg-3 col-10 offset-1">
@@ -208,24 +226,57 @@
                     <h2>04 <span>応募方法</span></h2>
                     <div class="steps-to-enter">
                         <h3>エントリー期間<br>
-                            <span>2022</span>年<span>6</span>月<span>21</span>日（月）〜<span>8</span>月<span>20</span>日（土）</h4>
+                            <span>2022</span>年<span>6</span>月<span>21</span>日（月）〜<br class="smph_br"><span>8</span>月<span>20</span>日（土）</h4>
                             <p>※締切当日23時59分まで有効</p>
                     </div>
                     <hr>
                     <div class="steps">
                         <p>専用エントリーフォームに必要事項を記入し、送信してください。</p>
-                        <div class="row">
-                            <div class="col-md-4 text-center">
-                                <img src="https://img.icons8.com/ios/50/ffffff/export-pdf--v1.png" />
-                                <p>エントリーフォームに記入。<br>
-                                    （pdfをダウンロード）</p>
+                        
+                        <div class="row row-flex">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                              <div class="content">
+                                <div class="steps">
+                                    Step 1
+                                </div>
+                                <div class="img-area">
+                                    <img src="assets/images/kami1_steps01.png" class="img-fluid" />
+                                </div>
+                                <div class="text-area">
+                                    <p>エントリーフォームをダウンロードしてください。<br>
+                                        （サイトからpdfをダウンロード）</p>
+                                </div>
+                              </div>
                             </div>
-                            <div class="col-md-4 text-center">
-                                <img src="assets/images/entry.svg" class="img-fluid" />
-                                <p>エントリーフォームに記入。<br>
-                                    （pdfをダウンロード）</p>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                              <div class="content">
+                                <div class="steps">
+                                    Step 2
+                                </div>
+                                <div class="img-area">
+                                    <img src="assets/images/kami1_steps02.png" class="img-fluid" />
+                                </div>
+                                <div class="text-area">
+                                    <p>エントリーフォーム(pdf)に記入。グループ・個人の顔写真も添付してください。<br>
+                                    </p>
+                                </div>
+                              </div>
                             </div>
-                        </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                              <div class="content">
+                                <div class="steps">
+                                    Step 3
+                                </div>
+                                <div class="img-area">
+                                    <img src="assets/images/kami1_steps03.png" class="img-fluid" />
+                                </div>
+                                <div class="text-area">
+                                    <p>予選をKAMI-1グランプリ公式ページで確認<br>
+                                    </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
                 </div>
             </div>

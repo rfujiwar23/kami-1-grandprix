@@ -16,6 +16,25 @@ nav {
   background-color: gainsboro !important;
 }
 
+.bottom-menu {
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  left: 0;
+  z-index: 99999;
+  color: #fff;
+}
+.bottom-menu .banner-left {
+  background: rgba(21, 96, 172, 0.6);
+}
+.bottom-menu .banner-right {
+  background: rgba(211, 101, 5, 0.6);
+}
+
+.smph_br {
+  display: none;
+}
+
 .confetti-box {
   padding-top: 6vh;
 }
@@ -48,7 +67,6 @@ nav {
   grid-template-rows: auto max-content;
   background-size: cover;
   color: white;
-  padding: 2rem;
 }
 .sect01 .dark p {
   color: #f8f8f8;
@@ -242,6 +260,40 @@ nav {
   color: red;
   font-size: 10em;
 }
+.sect05 .steps .content {
+  margin-top: 3vh;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
+  background: silver;
+  border: 1px solid #b1b1b1;
+  position: relative;
+}
+.sect05 .steps .content .steps {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  padding: 3px 10px;
+  background: #eb7b07;
+  background: linear-gradient(140deg, #eb7b07 0%, #fde616 66%);
+  transform: rotate(-10deg);
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+.sect05 .steps .content .img-area {
+  background: white;
+  padding-top: 20px;
+}
+.sect05 .steps .content .img-area img {
+  padding-bottom: 20px;
+}
+.sect05 .steps .content .text-area {
+  border-top: 1px dotted #7e7e7e;
+}
+.sect05 .steps .content .text-area p {
+  font-size: 0.8em;
+  padding: 20px 10px 10px;
+}
 
 .sect06 {
   color: #0d1a29;
@@ -410,6 +462,59 @@ nav {
 .sect06 .requirements .requirement-table .req-row .text p span strong {
     color: #b90707;
     padding: 0 5px;
+  }
+}
+@media screen and (max-width: 446px) {
+  .sect01 .dark #timer {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 414px) {
+  .sect05 .steps-to-enter h3 {
+    font-size: 1em;
+  }
+  .sect05 .steps-to-enter h3 span {
+    font-size: 1.5em;
+    padding: 0 3px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sect02 .heading p.body {
+    font-size: 0.9em;
+  }
+
+  .sect03 .qualifications .qualification-list ul li {
+    font-size: 1em;
+  }
+
+  .sect04 .entry .entry-qual ul li {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 378px) {
+  .main-title h2 {
+    font-size: 1.25em;
+  }
+
+  .sect01 .dark #timer {
+    font-size: 2em;
+  }
+  .sect01 .dark #timer div {
+    min-width: 70px;
+  }
+
+  .sect03 .qualifications .qualification-list ul li {
+    font-size: 1em;
+  }
+
+  .sect04 .entry .entry-qual ul li {
+    font-size: 1em;
+  }
+
+  .footer .container .links ul li {
+    display: block;
+    border-right: none;
+    line-height: 2em;
   }
 }
 
