@@ -324,7 +324,7 @@ body {
 }
 .main .sect05 .steps-to-enter h3 span {
   font-size: 2em;
-  font-weight: 100;
+  font-weight: 400;
   color: #464646;
   padding: 0 5px;
 }
@@ -412,6 +412,11 @@ body {
 .main .sect06 .requirements .requirement-table .schedule-row:nth-last-child(1),
 .main .sect06 .requirements .requirement-table .req-row:nth-last-child(1) {
   border-bottom: none;
+}
+.main .sect06 .requirements .requirement-table .schedule-row video,
+.main .sect06 .requirements .requirement-table .req-row video {
+  width: 100% !important;
+  height: auto !important;
 }
 .main .sect06 .requirements .requirement-table .schedule-row .title,
 .main .sect06 .requirements .requirement-table .req-row .title {
@@ -597,10 +602,11 @@ body {
   .main .sect06 .requirements .requirement-table .schedule-row .text p,
 .main .sect06 .requirements .requirement-table .req-row .text p {
     margin-bottom: 0;
+    font-size: 1.1em;
   }
   .main .sect06 .requirements .requirement-table .schedule-row .text p span,
 .main .sect06 .requirements .requirement-table .req-row .text p span {
-    font-size: 0.9em;
+    font-size: 1em;
   }
   .main .sect06 .requirements .requirement-table .schedule-row .text p span strong,
 .main .sect06 .requirements .requirement-table .req-row .text p span strong {

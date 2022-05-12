@@ -377,7 +377,7 @@ background: linear-gradient(140deg, rgba(253,231,21,1) 0%, rgba(237,137,10,1) 10
                 line-height: 2em;
                 span {
                     font-size: 2em;
-                    font-weight: 100;
+                    font-weight: 400;
                     color: rgb(70, 70, 70);
                     // text-shadow: 0 0 20px #8c8c8c;
                     padding: 0 5px;
@@ -478,6 +478,10 @@ background: linear-gradient(140deg, rgba(253,231,21,1) 0%, rgba(237,137,10,1) 10
                     }
                     &:nth-last-child(1) {
                         border-bottom: none;
+                    }
+                    video {
+                        width: 100% !important;
+                        height: auto !important;
                     }
                     .title {
                         display: flex;
@@ -672,8 +676,9 @@ background: linear-gradient(140deg, rgba(253,231,21,1) 0%, rgba(237,137,10,1) 10
                             p {
                                 // color: blue;
                                 margin-bottom: 0;
+                                font-size: 1.1em;
                                 span {
-                                    font-size: 0.9em;
+                                    font-size: 1em;
                                     strong {
                                         color: rgb(185, 7, 7);
                                         padding: 0 5px;
