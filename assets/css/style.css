@@ -57,18 +57,47 @@ body {
 .main-title {
   padding-top: 4vh;
 }
+.main-title h4 {
+  font-size: 3em;
+  font-weight: bolder;
+  text-align: center;
+  color: #9c0a0a;
+  -webkit-text-stroke: 1px white;
+}
+.main-title h5 {
+  color: #042a6f;
+  text-shadow: 1px 3px 3px #fff;
+  margin: 3vh auto;
+  font-weight: bold;
+  font-size: 2.5em;
+  padding: 5px 10px;
+}
+.main-title h5 span {
+  font-size: 1.5em;
+  padding: 5px 20px;
+  background: #fde715;
+  background: linear-gradient(140deg, #fde715 0%, #ed890a 100%);
+  border: 3px solid white;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
+}
+.main-title h2 {
+  line-height: 1.5em;
+}
 .main-title h2 strong {
-  font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
   font-size: 1.25em;
+  font-family: "Oswald", sans-serif;
+}
+.main-title h2 span {
+  font-size: 0.9em;
 }
 .main-title h3 {
   font-size: 3.5em;
-  font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+  font-family: "Oswald", sans-serif;
 }
 .main-title h3 span {
   writing-mode: vertical-rl;
   text-orientation: upright;
-  font-size: 10px;
+  font-size: 8px;
   padding-left: 8px;
 }
 
@@ -175,6 +204,13 @@ body {
 }
 .main .sect02 .heading p.body .title {
   color: #288ddf;
+}
+.main .sect02 .heading .video-area {
+  padding: 4vh 0 0;
+}
+.main .sect02 .heading .video-area video {
+  width: 100% !important;
+  height: auto !important;
 }
 .main .sect03 {
   padding: 4vh 0;
@@ -410,7 +446,7 @@ body {
 
 .footer {
   background-color: #d9d9d9;
-  padding: 2vh 0;
+  padding: 2vh 0 8vh;
 }
 .footer .container .links {
   text-align: center;
@@ -500,6 +536,10 @@ body {
     display: block;
   }
 
+  .main-title h4 {
+    font-size: 2.5em;
+  }
+
   .main {
     background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85)), url(../images/main-bg-phone.png) no-repeat;
     background-position: center;
@@ -574,6 +614,13 @@ body {
   }
 }
 @media screen and (max-width: 414px) {
+  .main-title h4 {
+    font-size: 2.25em;
+  }
+  .main-title h5 span {
+    font-size: 1.25em;
+  }
+
   .small-smph-connect {
     display: none;
   }
@@ -587,6 +634,10 @@ body {
   }
 }
 @media screen and (max-width: 400px) {
+  .main-title h4 {
+    font-size: 2em;
+  }
+
   .main .sect02 .heading p.body {
     font-size: 0.9em;
   }

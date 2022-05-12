@@ -8,8 +8,6 @@ $kamisma-gold: rgb(176, 132, 7);
     margin: 0;
 }
 
-
-
 /* Set the scroll margin top on all anchor elements by using .anchor class */
 /* Note: I'm setting plus 2.5em so the element has some breathing room on the top */
 
@@ -34,9 +32,7 @@ body {
 
 .bg-kmax.scrolled {
     background: #fff !important;
-  }
-
-
+}
 
 .small-smph-connect {
     display: block;
@@ -65,37 +61,74 @@ body {
 
 .confetti-box {
     padding-top: 6vh;
-    background:url(../images/wall.png) no-repeat;
-  background-position: center;
-  background-size: cover;
+    background: url(../images/wall.png) no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .main-title {
     padding-top: 4vh;
+    h4 {
+        font-size: 3em;
+        font-weight: bolder;
+        text-align: center;
+        // -webkit-background-clip: text;
+        color: rgb(156, 10, 10);
+        // background-image: linear-gradient(rgb(156, 10, 10) 46%, rgb(201, 47, 0) 49%, rgb(156, 10, 10) 80%);
+        // -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+    }
+    // h4::before {
+    //     background: -webkit-linear-gradient(-86deg, #eef85b 5%, #7aec8d 53%, #09e5c3 91%);
+    //     background-clip: text;
+    //     -webkit-text-stroke: 4px transparent;
+    //     color: #232d2d;
+    // }
+    h5 {
+        // background: -webkit-linear-gradient(left, #090052, #90b1d3);
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        color:rgb(4, 42, 111);
+        text-shadow: 1px 3px 3px #fff;
+        // background: rgb(15,6,96);
+        margin:3vh auto;
+        font-weight: bold;
+        font-size: 2.5em;
+        padding:5px 10px;
+        span {
+            font-size: 1.5em;
+            padding:5px 20px;
+            background: rgb(253,231,21);
+background: linear-gradient(140deg, rgba(253,231,21,1) 0%, rgba(237,137,10,1) 100%);
+            border:3px solid rgb(255, 255, 255);
+            box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
+        }
+    }
+
     h2 {
-        // line-height: 1.25em;
+        line-height: 1.5em;
         strong {
-            font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat,
-                Bitstream Vera Sans Bold, Arial Black, sans serif;
-            // color:red;
             font-size: 1.25em;
+            font-family: "Oswald", sans-serif;
+        }
+        span {
+            font-size: 0.9em;
         }
     }
     h3 {
         font-size: 3.5em;
-        font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat,
-            Bitstream Vera Sans Bold, Arial Black, sans serif;
+        font-family: "Oswald", sans-serif;
         span {
             writing-mode: vertical-rl;
             text-orientation: upright;
-            font-size: 10px;
+            font-size: 8px;
             padding-left: 8px;
         }
     }
 }
 
 .sect01 {
-    padding:8vh 0;
+    padding: 8vh 0;
     .dark {
         background: rgb(12, 22, 49);
         padding: 3vh 0;
@@ -137,19 +170,20 @@ body {
 }
 
 .main {
-    padding:5vh 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.95),rgba(255, 255, 255, 0.85)), url(../images/main-bg.png) no-repeat;
+    padding: 5vh 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85)),
+        url(../images/main-bg.png) no-repeat;
     background-position: center;
     background-size: contain;
     background-attachment: fixed;
     .sect02 {
         padding: 4vh 0;
         .inner-nav {
-            padding:0;
+            padding: 0;
             list-style-type: none;
             li {
                 display: inline-block;
-                margin:0 10px;
+                margin: 0 10px;
             }
         }
         .heading {
@@ -159,7 +193,7 @@ body {
             }
             h2 {
                 color: $header-text;
-    
+
                 font-size: 2em;
                 span {
                     color: $kami1-dark;
@@ -202,11 +236,18 @@ body {
                     color: rgb(40, 141, 223);
                 }
             }
+            .video-area {
+                padding:4vh 0 0;
+                video {
+                    width: 100% !important;
+                    height: auto !important;
+                }
+            }
         }
     }
-    
+
     .sect03 {
-        padding:4vh 0;
+        padding: 4vh 0;
         .qualifications {
             color: $kami1-dark;
             hr {
@@ -214,7 +255,7 @@ body {
             }
             h2 {
                 color: $header-text;
-    
+
                 font-size: 2em;
                 span {
                     color: $kami1-dark;
@@ -253,7 +294,7 @@ body {
             }
         }
     }
-    
+
     .sect04 {
         padding: 4vh 0;
         .entry {
@@ -263,7 +304,7 @@ body {
             }
             h2 {
                 color: $header-text;
-    
+
                 font-size: 2em;
                 span {
                     color: $kami1-dark;
@@ -301,7 +342,7 @@ body {
             }
         }
     }
-    
+
     .sect05 {
         padding: 4vh 0;
         color: $kami1-dark;
@@ -310,7 +351,7 @@ body {
         }
         h2 {
             color: $header-text;
-    
+
             font-size: 2em;
             span {
                 color: $kami1-dark;
@@ -366,7 +407,7 @@ body {
                     position: absolute;
                     top: -10px;
                     left: -5px;
-                    padding:3px 10px;
+                    padding: 3px 10px;
                     background: rgb(235, 123, 7);
                     background: linear-gradient(140deg, rgba(235, 123, 7, 1) 0%, rgba(253, 230, 22, 1) 66%);
                     transform: rotate(-10deg);
@@ -393,13 +434,13 @@ body {
             }
         }
     }
-    
+
     .sect06 {
         color: $kami1-dark;
         .requirements {
             h2 {
                 color: $header-text;
-    
+
                 font-size: 2em;
                 span {
                     color: $kami1-dark;
@@ -427,7 +468,7 @@ body {
                         font-size: 2em;
                     }
                 }
-    
+
                 .schedule-row,
                 .req-row {
                     border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
@@ -471,7 +512,7 @@ body {
 
 .footer {
     background-color: rgb(217, 217, 217);
-    padding: 2vh 0;
+    padding: 2vh 0 8vh;
     .container {
         .links {
             text-align: center;
@@ -558,15 +599,20 @@ body {
             }
         }
     }
-    
 }
 
 @media screen and (max-width: 576px) {
     .smph_br {
         display: block;
     }
+    .main-title {
+        h4 {
+            font-size: 2.5em;
+        }
+    }
     .main {
-        background: linear-gradient(rgba(255, 255, 255, 0.95),rgba(255, 255, 255, 0.85)), url(../images/main-bg-phone.png) no-repeat;
+        background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85)),
+            url(../images/main-bg-phone.png) no-repeat;
         background-position: center;
         background-size: contain;
         background-attachment: fixed;
@@ -576,7 +622,7 @@ body {
                     margin-top: 0;
                     .text-area {
                         p {
-                            padding:10px 3px;
+                            padding: 10px 3px;
                         }
                     }
                 }
@@ -594,7 +640,7 @@ body {
                             font-size: 2em;
                         }
                     }
-    
+
                     .schedule-row,
                     .req-row {
                         border-bottom: none !important;
@@ -651,10 +697,22 @@ body {
         }
     }
 }
+
 @media screen and (max-width: 414px) {
     // .smph_br {
     //     display: block;
     // }
+
+    .main-title {
+        h4 {
+            font-size: 2.25em;
+        }
+        h5 {
+            span {
+                font-size: 1.25em;
+            }
+        }
+    }
 
     .small-smph-connect {
         display: none;
@@ -674,6 +732,14 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+
+    .main-title {
+        h4 {
+            font-size: 2em;
+        }
+    }
+
+
     .main {
         .sect02 {
             .heading {
